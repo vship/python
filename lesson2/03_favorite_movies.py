@@ -14,4 +14,9 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 # Переопределять my_favorite_movies и использовать .split() нельзя.
 # Запятая не должна выводиться.
 
-# TODO здесь ваш код
+# TODO здесь ваш код FINAL
+
+print("Первый фильм: " + my_favorite_movies[:my_favorite_movies.find(",")])
+print("Последний фильм: " + my_favorite_movies[my_favorite_movies.rfind(",") + 1:])
+print("Второй фильм: " + my_favorite_movies[my_favorite_movies.find(",") + 1:my_favorite_movies.find(",", my_favorite_movies.find(",") + 1)])
+print("Второй с конца фильм: " + my_favorite_movies[my_favorite_movies.rfind(",", 0, my_favorite_movies.rfind(",")) + 1:my_favorite_movies.rfind(",")])
