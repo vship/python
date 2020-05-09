@@ -1,15 +1,14 @@
 print ("hello?")
+age = input('Сколько тебе лет: ')
+#if bool(age.isdigit()):
 
-name = input('введите  число: ')
-print(name.isnumeric())
-if str(name.isnumeric()) == "False":
-   print("Эт самое")
-   name = input('введите  число: ')
+if age.isdigit():
+    print(age + " тебе лет")
+    print(type(age))
+    print("преобразую в int!!!")
+    age_int = int(age)
+    print(type(age_int))
 else:
- print(name + " так тебя зовут")
-
- print(type(name))
- print("преобразую в int!!!")
- name_int = int(name)
- print(type(name_int))
-
+    print("Эт самое")
+    age = input('введите  число: ')
+print('Ура, товарищи!')
